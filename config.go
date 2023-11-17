@@ -79,3 +79,9 @@ func SetAccessTokenExpHandler(handler server.AccessTokenExpHandler) {
 func SetAuthorizeScopeHandler(handler server.AuthorizeScopeHandler) {
 	gServer.AuthorizeScopeHandler = handler
 }
+
+// SetResponseTokenHandler set scope for the response token handing
+func SetResponseTokenHandler(handler server.ResponseTokenHandler) {
+	gServer.ResponseTokenHandler = handler
+}
+
